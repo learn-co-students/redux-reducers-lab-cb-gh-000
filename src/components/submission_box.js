@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect } from 'react-redux';
 import { addIngredient }  from '../actions';
+import { removeIngredient }  from '../actions';
 import { bindActionCreators } from 'redux';
 
 class SubmissionBox extends Component {
