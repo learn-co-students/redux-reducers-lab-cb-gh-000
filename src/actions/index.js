@@ -10,6 +10,6 @@ export function addIngredient(ingredient) {
 export function removeIngredient(index) {
   return {
     type: 'REMOVE_INGREDIENT',
-    payload: index
+    payload: ingredient
   }
 }
