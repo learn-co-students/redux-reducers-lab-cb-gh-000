@@ -7,7 +7,7 @@ import { Ingredient } from './Ingredient';
 class IngredientList extends Component {
   constructor(props) {
     super(props)
-  
+
   }
 
   handleClick(index) {
@@ -32,7 +32,7 @@ class IngredientList extends Component {
 
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ removeIngredient}, dispatch)
+  return bindActionCreators({ removeIngredient }, dispatch)
 }
 
 function mapStateToProps(state) {
