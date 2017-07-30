@@ -18,4 +18,9 @@ describe('ingredient reducer', () => {
       const action = { type: 'REMOVE_INGREDIENT', payload: 'cheese'}
       expect(ingredientReducer(['milk', 'cheese', 'eggs'], action)).toEqual(['milk', 'eggs'])
     })
+
+    it('handles REMOVE_INGREDIENT action', () => {
+      const action = { type: 'REMOVE_INGREDIENT', payload: 1 }
+      expect(ingredientReducer(['ham', 'bacon', 'bread'], action)).toEqual(['ham', 'bread'])
+    })
 })

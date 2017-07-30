@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { removeIngredient}  from '../actions';
+import { removeIngredient }  from '../actions';
 import { Ingredient } from './Ingredient';
 
 class IngredientList extends Component {
   constructor(props) {
     super(props)
-  
+
   }
 
   handleClick(index) {
@@ -32,7 +32,7 @@ class IngredientList extends Component {
 
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ removeIngredient}, dispatch)
+  return bindActionCreators({ removeIngredient }, dispatch)
 }
 
 function mapStateToProps(state) {
