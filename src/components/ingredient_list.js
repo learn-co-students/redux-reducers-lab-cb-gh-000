@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { removeIngredient}  from '../actions';
+import { removeIngredient }  from '../actions';
 import { Ingredient } from './Ingredient';
 
 class IngredientList extends Component {
